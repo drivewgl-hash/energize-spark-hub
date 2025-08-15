@@ -1,96 +1,183 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap');
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
 
-/* Definition of the design system. All colors, gradients, fonts, etc should be defined here. 
-All colors MUST be HSL.
-*/
-
+/* Instituto Energizando Vidas Design System */
 @layer base {
   :root {
-    --background: 0 0% 100%;
-    --foreground: 222.2 84% 4.9%;
-
-    --card: 0 0% 100%;
-    --card-foreground: 222.2 84% 4.9%;
-
-    --popover: 0 0% 100%;
-    --popover-foreground: 222.2 84% 4.9%;
-
-    --primary: 222.2 47.4% 11.2%;
-    --primary-foreground: 210 40% 98%;
-
-    --secondary: 210 40% 96.1%;
-    --secondary-foreground: 222.2 47.4% 11.2%;
-
-    --muted: 210 40% 96.1%;
-    --muted-foreground: 215.4 16.3% 46.9%;
-
-    --accent: 210 40% 96.1%;
-    --accent-foreground: 222.2 47.4% 11.2%;
-
-    --destructive: 0 84.2% 60.2%;
-    --destructive-foreground: 210 40% 98%;
-
-    --border: 214.3 31.8% 91.4%;
-    --input: 214.3 31.8% 91.4%;
-    --ring: 222.2 84% 4.9%;
-
-    --radius: 0.5rem;
-
-    --sidebar-background: 0 0% 98%;
-
-    --sidebar-foreground: 240 5.3% 26.1%;
-
-    --sidebar-primary: 240 5.9% 10%;
-
-    --sidebar-primary-foreground: 0 0% 98%;
-
-    --sidebar-accent: 240 4.8% 95.9%;
-
-    --sidebar-accent-foreground: 240 5.9% 10%;
-
-    --sidebar-border: 220 13% 91%;
-
-    --sidebar-ring: 217.2 91.2% 59.8%;
+    /* Core Brand Colors */
+    --instituto-primary: 223 100% 13%; /* #000b43 - Azul Marinho Escuro */
+    --instituto-secondary: 212 97% 40%; /* #024aac - Azul Brilhante */
+    --instituto-accent: 85 95% 56%; /* #9af722 - Verde Limão Vibrante */
+    --instituto-text: 223 100% 13%; /* Texto escuro */
+    --instituto-text-light: 210 17% 95%; /* #f0f2f5 - Texto claro */
+    --instituto-white: 0 0% 100%; /* Branco puro */
+    --instituto-background: 210 17% 95%; /* #f0f2f5 - Fundo claro */
+    
+    /* Gradients */
+    --gradient-primary: linear-gradient(135deg, hsl(var(--instituto-primary)), hsl(var(--instituto-secondary)));
+    --gradient-accent: linear-gradient(135deg, hsl(var(--instituto-accent)), hsl(85 85% 66%));
+    --gradient-hero: linear-gradient(45deg, hsl(var(--instituto-primary)), hsl(var(--instituto-secondary)));
+    
+    /* Shadows */
+    --shadow-card: 0 15px 35px rgba(0, 0, 0, 0.08);
+    --shadow-glow: 0 0 40px hsl(var(--instituto-accent) / 0.3);
+    --shadow-elevated: 0 20px 40px rgba(0, 0, 0, 0.1);
+    
+    /* Animations */
+    --transition-smooth: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+    --transition-bounce: all 0.3s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+    
+    /* Shadcn overrides with theme colors */
+    --background: var(--instituto-background);
+    --foreground: var(--instituto-text);
+    --card: var(--instituto-white);
+    --card-foreground: var(--instituto-text);
+    --popover: var(--instituto-white);
+    --popover-foreground: var(--instituto-text);
+    --primary: var(--instituto-primary);
+    --primary-foreground: var(--instituto-text-light);
+    --secondary: var(--instituto-secondary);
+    --secondary-foreground: var(--instituto-text-light);
+    --muted: 210 17% 92%;
+    --muted-foreground: 215 16% 47%;
+    --accent: var(--instituto-accent);
+    --accent-foreground: var(--instituto-primary);
+    --destructive: 0 84% 60%;
+    --destructive-foreground: var(--instituto-text-light);
+    --border: 214 32% 91%;
+    --input: 214 32% 91%;
+    --ring: var(--instituto-accent);
+    --radius: 0.75rem;
   }
 
   .dark {
-    --background: 222.2 84% 4.9%;
-    --foreground: 210 40% 98%;
+    --background: var(--instituto-primary);
+    --foreground: var(--instituto-text-light);
+    --card: 223 100% 8%;
+    --card-foreground: var(--instituto-text-light);
+    --popover: 223 100% 8%;
+    --popover-foreground: var(--instituto-text-light);
+    --primary: var(--instituto-text-light);
+    --primary-foreground: var(--instituto-primary);
+    --secondary: 212 80% 25%;
+    --secondary-foreground: var(--instituto-text-light);
+    --muted: 223 100% 15%;
+    --muted-foreground: 215 20% 65%;
+    --accent: var(--instituto-accent);
+    --accent-foreground: var(--instituto-primary);
+    --destructive: 0 63% 31%;
+    --destructive-foreground: var(--instituto-text-light);
+    --border: 223 100% 15%;
+    --input: 223 100% 15%;
+    --ring: var(--instituto-accent);
+  }
+}
 
-    --card: 222.2 84% 4.9%;
-    --card-foreground: 210 40% 98%;
+@layer base {
+  * {
+    @apply border-border;
+  }
 
-    --popover: 222.2 84% 4.9%;
-    --popover-foreground: 210 40% 98%;
+  body {
+    @apply bg-background text-foreground;
+    font-family: 'Poppins', sans-serif;
+  }
 
-    --primary: 210 40% 98%;
-    --primary-foreground: 222.2 47.4% 11.2%;
+  html {
+    scroll-behavior: smooth;
+  }
+}
 
-    --secondary: 217.2 32.6% 17.5%;
-    --secondary-foreground: 210 40% 98%;
+@layer components {
+  /* Hero Components */
+  .hero-gradient {
+    background: var(--gradient-hero);
+  }
+  
+  .accent-gradient {
+    background: var(--gradient-accent);
+  }
+  
+  .primary-gradient {
+    background: var(--gradient-primary);
+  }
+  
+  /* Interactive Elements */
+  .interactive-underline {
+    @apply relative;
+  }
+  
+  .interactive-underline::after {
+    content: '';
+    @apply absolute w-full scale-x-0 h-0.5 bottom-0 left-0 origin-bottom-right;
+    background-color: hsl(var(--instituto-accent));
+    transition: transform 0.3s ease;
+  }
+  
+  .interactive-underline:hover::after {
+    @apply scale-x-100 origin-bottom-left;
+  }
+  
+  /* Cards */
+  .card-elevated {
+    box-shadow: var(--shadow-elevated);
+    @apply transition-all duration-300 hover:-translate-y-2;
+  }
+  
+  .card-glow {
+    box-shadow: var(--shadow-glow);
+  }
+  
+  /* Animations */
+  .animate-float {
+    animation: float 6s ease-in-out infinite;
+  }
+  
+  .animate-pulse-slow {
+    animation: pulse 3s cubic-bezier(0.4, 0, 0.6, 1) infinite;
+  }
+  
+  .animate-fade-in-up {
+    animation: fadeInUp 0.8s ease-out forwards;
+  }
+  
+  /* Particle Background */
+  .particle-bg {
+    background: hsl(var(--instituto-primary));
+    position: relative;
+    overflow: hidden;
+  }
+}
 
-    --muted: 217.2 32.6% 17.5%;
-    --muted-foreground: 215 20.2% 65.1%;
+@keyframes float {
+  0%, 100% {
+    transform: translateY(0px);
+  }
+  50% {
+    transform: translateY(-20px);
+  }
+}
 
-    --accent: 217.2 32.6% 17.5%;
-    --accent-foreground: 210 40% 98%;
+@keyframes fadeInUp {
+  0% {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
 
-    --destructive: 0 62.8% 30.6%;
-    --destructive-foreground: 210 40% 98%;
-
-    --border: 217.2 32.6% 17.5%;
-    --input: 217.2 32.6% 17.5%;
-    --ring: 212.7 26.8% 83.9%;
-    --sidebar-background: 240 5.9% 10%;
-    --sidebar-foreground: 240 4.8% 95.9%;
-    --sidebar-primary: 224.3 76.3% 48%;
-    --sidebar-primary-foreground: 0 0% 100%;
-    --sidebar-accent: 240 3.7% 15.9%;
-    --sidebar-accent-foreground: 240 4.8% 95.9%;
-    --sidebar-border: 240 3.7% 15.9%;
-    --sidebar-ring: 217.2 91.2% 59.8%;
+@keyframes pulse {
+  0%, 100% {
+    opacity: 1;
+  }
+  50% {
+    opacity: .7;
   }
 }
 

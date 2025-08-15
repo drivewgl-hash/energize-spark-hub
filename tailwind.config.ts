@@ -18,7 +18,21 @@ export default {
 			}
 		},
 		extend: {
+			fontFamily: {
+				'poppins': ['Poppins', 'sans-serif'],
+			},
 			colors: {
+				// Instituto brand colors
+				'instituto': {
+					'primary': 'hsl(var(--instituto-primary))',
+					'secondary': 'hsl(var(--instituto-secondary))',
+					'accent': 'hsl(var(--instituto-accent))',
+					'text': 'hsl(var(--instituto-text))',
+					'text-light': 'hsl(var(--instituto-text-light))',
+					'white': 'hsl(var(--instituto-white))',
+					'background': 'hsl(var(--instituto-background))',
+				},
+				// Shadcn colors with theme integration
 				border: 'hsl(var(--border))',
 				input: 'hsl(var(--input))',
 				ring: 'hsl(var(--ring))',
@@ -52,16 +66,21 @@ export default {
 					DEFAULT: 'hsl(var(--card))',
 					foreground: 'hsl(var(--card-foreground))'
 				},
-				sidebar: {
-					DEFAULT: 'hsl(var(--sidebar-background))',
-					foreground: 'hsl(var(--sidebar-foreground))',
-					primary: 'hsl(var(--sidebar-primary))',
-					'primary-foreground': 'hsl(var(--sidebar-primary-foreground))',
-					accent: 'hsl(var(--sidebar-accent))',
-					'accent-foreground': 'hsl(var(--sidebar-accent-foreground))',
-					border: 'hsl(var(--sidebar-border))',
-					ring: 'hsl(var(--sidebar-ring))'
-				}
+			},
+			backgroundImage: {
+				'gradient-hero': 'var(--gradient-hero)',
+				'gradient-primary': 'var(--gradient-primary)',
+				'gradient-accent': 'var(--gradient-accent)',
+			},
+			boxShadow: {
+				'card': 'var(--shadow-card)',
+				'elevated': 'var(--shadow-elevated)',
+				'glow': 'var(--shadow-glow)',
+			},
+			animation: {
+				'float': 'float 6s ease-in-out infinite',
+				'pulse-slow': 'pulse 3s cubic-bezier(0.4, 0, 0.6, 1) infinite',
+				'fade-in-up': 'fadeInUp 0.8s ease-out forwards',
 			},
 			borderRadius: {
 				lg: 'var(--radius)',
