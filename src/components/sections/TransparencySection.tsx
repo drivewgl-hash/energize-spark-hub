@@ -5,46 +5,130 @@ import { FileText, Download, Shield, Eye, BarChart3, Users } from 'lucide-react'
 
 const documentsData = [
   {
-    title: "Estatuto Social",
-    description: "Documento que rege as atividades e organização do instituto",
+    title: "ATA DE CONSTITUIÇÃO",
+    description: "Documento de fundação da organização",
     type: "PDF",
     icon: FileText,
     year: "2024"
   },
   {
-    title: "Relatório de Atividades 2023",
-    description: "Resumo completo das ações e projetos realizados no último ano",
+    title: "ESTATUTO SOCIAL DE CONSTITUIÇÃO",
+    description: "Regimento interno e normas da instituição",
+    type: "PDF", 
+    icon: FileText,
+    year: "2024"
+  },
+  {
+    title: "CNPJ",
+    description: "Certificado de registro da pessoa jurídica",
+    type: "PDF",
+    icon: FileText,
+    year: "2024"
+  },
+  {
+    title: "ALTERAÇÃO ESTATUTÁRIA",
+    description: "Modificações no estatuto social",
+    type: "PDF",
+    icon: FileText,
+    year: "2024"
+  },
+  {
+    title: "ATA DA NOVA GOVERNANÇA",
+    description: "Ata de aprovação da nova estrutura de governança",
+    type: "PDF",
+    icon: Users,
+    year: "2025"
+  },
+  {
+    title: "BALANÇO CONTÁBIL DE 2023",
+    description: "Demonstração financeira do exercício 2023",
     type: "PDF",
     icon: BarChart3,
     year: "2023"
   },
   {
-    title: "Demonstrativo Financeiro",
-    description: "Prestação de contas e transparência na gestão dos recursos",
+    title: "BALANÇO CONTÁBIL DE 2024",
+    description: "Demonstração financeira do exercício 2024",
     type: "PDF",
-    icon: Shield,
+    icon: BarChart3,
+    year: "2024"
+  },
+  {
+    title: "DRE DO ANO DE 2023",
+    description: "Demonstração de Resultados do Exercício 2023",
+    type: "PDF",
+    icon: BarChart3,
     year: "2023"
   },
   {
-    title: "Certificado CNPJ",
-    description: "Comprovação da regularidade jurídica da organização",
+    title: "DRE DO ANO DE 2024",
+    description: "Demonstração de Resultados do Exercício 2024",
+    type: "PDF",
+    icon: BarChart3,
+    year: "2024"
+  },
+  {
+    title: "NOTAS EXPLICATIVAS DE 2024",
+    description: "Detalhamento das demonstrações contábeis",
+    type: "PDF",
+    icon: BarChart3,
+    year: "2024"
+  },
+  {
+    title: "RELATÓRIO DE ATIVIDADES DE 2024",
+    description: "Prestação de contas das ações realizadas em 2024",
+    type: "PDF",
+    icon: BarChart3,
+    year: "2024"
+  },
+  {
+    title: "PLANO DE TRABALHO DE 2025",
+    description: "Planejamento estratégico para 2025",
     type: "PDF",
     icon: FileText,
+    year: "2025"
+  },
+  {
+    title: "CERTIDÃO NEGATIVA DE TRIBUTOS GOVERNO FEDERAL",
+    description: "Comprovante de regularidade fiscal federal",
+    type: "PDF",
+    icon: Shield,
     year: "2024"
   },
   {
-    title: "Relatório de Impacto Social",
-    description: "Análise dos resultados e benefícios gerados para a comunidade",
+    title: "CERTIDÃO NEGATIVA DE TRIBUTOS GOVERNO ESTADUAL",
+    description: "Comprovante de regularidade fiscal estadual",
+    type: "PDF",
+    icon: Shield,
+    year: "2024"
+  },
+  {
+    title: "CERTIDÃO NEGATIVA DE TRIBUTOS GOVERNO MUNICIPAL",
+    description: "Comprovante de regularidade fiscal municipal",
+    type: "PDF",
+    icon: Shield,
+    year: "2024"
+  },
+  {
+    title: "POLÍTICA DE VOLUNTARIADO",
+    description: "Diretrizes para participação voluntária",
     type: "PDF",
     icon: Users,
-    year: "2023"
+    year: "2024"
   },
   {
-    title: "Política de Privacidade",
-    description: "Como tratamos e protegemos os dados pessoais",
+    title: "TERMOS DE VOLUNTARIADOS ASSINADOS REFERENTE AO ANO 2025",
+    description: "Documentos de compromisso dos voluntários",
     type: "PDF",
-    icon: Eye,
-    year: "2024"
+    icon: Users,
+    year: "2025"
+  },
+  {
+    title: "TERMO DE POSSE DA ATUAL DIRETORIA E CONSELHO FISCAL",
+    description: "Documento de posse dos dirigentes atuais",
+    type: "PDF",
+    icon: Users,
+    year: "2025"
   }
 ];
 

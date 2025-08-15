@@ -1,4 +1,5 @@
 import { Instagram, MapPin, Clock, Mail, Phone } from 'lucide-react';
+import logoPrincipal from '@/assets/logo-principal.png';
 
 interface FooterProps {
   onNavigate: (section: string) => void;
@@ -9,22 +10,22 @@ export const Footer = ({ onNavigate }: FooterProps) => {
     <footer className="bg-instituto-primary text-instituto-text-light py-16">
       <div className="container mx-auto px-4">
         <div className="grid lg:grid-cols-4 gap-8 mb-12">
-          {/* Logo & Mission */}
-          <div className="lg:col-span-1">
+          {/* Logo & Mission - Centralizado */}
+          <div className="lg:col-span-1 flex flex-col items-center text-center">
             <button
               onClick={() => onNavigate('inicio')}
               className="block mb-6 transition-transform duration-300 hover:scale-105"
             >
               <img 
-                src="https://i.ibb.co/xtMr16cb/logos.png" 
+                src={logoPrincipal}
                 alt="Instituto Energizando Vidas"
-                className="h-16 w-auto"
+                className="h-24 w-auto mx-auto"
               />
             </button>
             <p className="text-instituto-text-light/80 leading-relaxed mb-6">
               Transformando comunidades através da educação, cultura e solidariedade há mais de uma década.
             </p>
-            <div className="flex items-center">
+            <div className="flex justify-center">
               <a 
                 href="https://www.instagram.com/energizandovidasinstituto" 
                 target="_blank" 
@@ -32,7 +33,7 @@ export const Footer = ({ onNavigate }: FooterProps) => {
                 className="text-instituto-text-light hover:text-instituto-accent transition-colors duration-300"
                 title="Siga-nos no Instagram"
               >
-                <Instagram className="w-6 h-6" />
+                <Instagram className="w-8 h-8" />
               </a>
             </div>
           </div>

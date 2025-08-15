@@ -1,5 +1,6 @@
 import { Button } from '@/components/ui/button';
 import { ArrowRight, Heart, Users, Star } from 'lucide-react';
+import logoPrincipal from '@/assets/logo-principal.png';
 
 interface HeroSectionProps {
   onNavigate: (section: string) => void;
@@ -20,10 +21,10 @@ export const HeroSection = ({ onNavigate }: HeroSectionProps) => {
 
       {/* Content */}
       <div className="relative z-10 container mx-auto px-4 text-center">
-        {/* Logo Arc */}
+        {/* Logo Principal */}
         <div className="mb-12 animate-float">
           <img 
-            src="https://i.ibb.co/nNDK7jV/logo.png" 
+            src={logoPrincipal}
             alt="Instituto Energizando Vidas" 
             className="w-full max-w-md mx-auto h-auto filter drop-shadow-2xl"
           />
@@ -63,27 +64,29 @@ export const HeroSection = ({ onNavigate }: HeroSectionProps) => {
             Faça Parte da Mudança
           </Button>
         </div>
+      </div>
 
-        {/* Stats */}
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-8 max-w-4xl mx-auto">
-          <div className="text-center">
+      {/* Stats Section - Separada e mais afastada */}
+      <div className="absolute bottom-32 left-1/2 transform -translate-x-1/2 w-full max-w-6xl px-4">
+        <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
+          <div className="bg-instituto-white/10 backdrop-blur-sm rounded-2xl p-6 border border-instituto-white/20 text-center">
             <div className="flex items-center justify-center mb-3">
               <Heart className="text-instituto-accent mr-2" size={32} />
-              <span className="text-4xl font-bold text-instituto-text-light">12+</span>
+              <span className="text-4xl font-bold text-instituto-text-light">3+</span>
             </div>
             <p className="text-instituto-text-light/80 font-medium">Anos de Atuação</p>
           </div>
-          <div className="text-center">
+          <div className="bg-instituto-white/10 backdrop-blur-sm rounded-2xl p-6 border border-instituto-white/20 text-center">
             <div className="flex items-center justify-center mb-3">
               <Users className="text-instituto-accent mr-2" size={32} />
-              <span className="text-4xl font-bold text-instituto-text-light">5000+</span>
+              <span className="text-4xl font-bold text-instituto-text-light">500+</span>
             </div>
             <p className="text-instituto-text-light/80 font-medium">Pessoas Impactadas</p>
           </div>
-          <div className="text-center">
+          <div className="bg-instituto-white/10 backdrop-blur-sm rounded-2xl p-6 border border-instituto-white/20 text-center">
             <div className="flex items-center justify-center mb-3">
               <Star className="text-instituto-accent mr-2" size={32} />
-              <span className="text-4xl font-bold text-instituto-text-light">50+</span>
+              <span className="text-4xl font-bold text-instituto-text-light">15+</span>
             </div>
             <p className="text-instituto-text-light/80 font-medium">Projetos Realizados</p>
           </div>
