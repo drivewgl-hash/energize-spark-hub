@@ -18,9 +18,9 @@ const contactMethods = [
   {
     icon: Phone,
     title: "Telefone",
-    info: "(11) 1234-5678",
+    info: "(11) 5555-2499",
     description: "Horário comercial: Segunda a Sexta, 08h às 18h",
-    action: "tel:+551112345678"
+    action: "tel:+5511555524999"
   },
   {
     icon: Mail,

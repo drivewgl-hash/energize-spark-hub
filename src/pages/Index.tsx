@@ -7,6 +7,7 @@ import { ProjectsSection } from '@/components/sections/ProjectsSection';
 import { PartnershipsSection } from '@/components/sections/PartnershipsSection';
 import { TransparencySection } from '@/components/sections/TransparencySection';
 import { JoinUsSection } from '@/components/sections/JoinUsSection';
+import { RewardsSection } from '@/components/sections/RewardsSection';
 import { ContactSection } from '@/components/sections/ContactSection';
 import { Footer } from '@/components/sections/Footer';
 
@@ -47,6 +48,8 @@ const Index = () => {
         return <TransparencySection />;
       case 'faca-parte':
         return <JoinUsSection />;
+      case 'recompensas':
+        return <RewardsSection />;
       case 'contatos':
         return <ContactSection />;
       default:

@@ -13,6 +13,7 @@ const navItems = [
   { id: 'parcerias', label: 'Parcerias' },
   { id: 'transparencia', label: 'Transparência' },
   { id: 'faca-parte', label: 'Faça Parte' },
+  { id: 'recompensas', label: 'Nossa Loja de Recompensas' },
   { id: 'contatos', label: 'Contatos' },
 ];
 
