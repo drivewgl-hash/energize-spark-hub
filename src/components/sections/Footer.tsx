@@ -17,9 +17,9 @@ export const Footer = ({ onNavigate }: FooterProps) => {
               className="block mb-6 transition-transform duration-300 hover:scale-105"
             >
               <img 
-                src={logoPrincipal}
+                src="https://i.ibb.co/nNDK7jV/logo.png"
                 alt="Instituto Energizando Vidas"
-                className="h-32 w-auto mx-auto border-4 border-instituto-white rounded-xl shadow-elevated"
+                className="h-24 w-auto mx-auto border-4 border-instituto-white rounded-xl shadow-elevated"
               />
             </button>
             <p className="text-instituto-text-light/80 leading-relaxed mb-6 max-w-2xl">
@@ -30,7 +30,7 @@ export const Footer = ({ onNavigate }: FooterProps) => {
                 href="https://www.instagram.com/energizandovidasinstituto" 
                 target="_blank" 
                 rel="noopener noreferrer"
-                className="text-instituto-text-light hover:text-instituto-accent transition-all duration-300 p-3 border-2 border-instituto-white rounded-full hover:bg-instituto-white hover:text-instituto-primary"
+                className="text-instituto-text-light hover:text-instituto-accent transition-all duration-300 p-3 border-4 border-instituto-white rounded-full hover:bg-instituto-white hover:text-instituto-primary shadow-elevated"
                 title="Siga-nos no Instagram"
               >
                 <Instagram className="w-8 h-8" />
