@@ -70,7 +70,7 @@ export const AboutSection = () => {
         </div>
 
         {/* Mission, Vision, Values */}
-        <div className="mb-32">
+        <div className="mb-20">
           <div className="text-center mb-16">
             <h2 className="text-4xl lg:text-5xl font-bold text-instituto-primary mb-6">
               Nossos Pilares
@@ -108,7 +108,7 @@ export const AboutSection = () => {
         </div>
 
         {/* Linha do Tempo Histórica */}
-        <div>
+        <div className="pt-20">
           <div className="text-center mb-16">
             <h2 className="text-4xl lg:text-5xl font-bold text-instituto-primary mb-6">
               Saiba mais sobre nossa atuação através da Linha do Tempo

@@ -22,7 +22,7 @@ export const HeroSection = ({ onNavigate }: HeroSectionProps) => {
       {/* Content */}
       <div className="relative z-10 container mx-auto px-4 text-center">
         {/* Logo Principal */}
-        <div className="mb-12 animate-float">
+        <div className="mb-8 animate-float">
           <img 
             src={logoPrincipal}
             alt="Instituto Energizando Vidas" 
@@ -45,7 +45,7 @@ export const HeroSection = ({ onNavigate }: HeroSectionProps) => {
         </p>
 
         {/* CTA Buttons */}
-        <div className="flex flex-col sm:flex-row gap-4 justify-center items-center mb-16">
+        <div className="flex flex-col sm:flex-row gap-4 justify-center items-center mb-12">
           <Button 
             variant="hero" 
             size="xl"
@@ -67,7 +67,7 @@ export const HeroSection = ({ onNavigate }: HeroSectionProps) => {
       </div>
 
       {/* Stats Section - Separada e mais afastada */}
-      <div className="absolute bottom-32 left-1/2 transform -translate-x-1/2 w-full max-w-6xl px-4">
+      <div className="absolute bottom-16 left-1/2 transform -translate-x-1/2 w-full max-w-6xl px-4">
         <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
           <div className="bg-instituto-white/10 backdrop-blur-sm rounded-2xl p-6 border border-instituto-white/20 text-center">
             <div className="flex items-center justify-center mb-3">
