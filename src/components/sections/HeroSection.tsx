@@ -8,7 +8,7 @@ interface HeroSectionProps {
 
 export const HeroSection = ({ onNavigate }: HeroSectionProps) => {
   return (
-    <section className="relative min-h-screen flex items-center justify-center overflow-hidden">
+    <section className="relative min-h-screen flex items-center justify-center overflow-hidden pt-20 lg:pt-24">
       {/* Hero Background */}
       <div 
         className="absolute inset-0 bg-cover bg-center bg-no-repeat"
@@ -20,7 +20,7 @@ export const HeroSection = ({ onNavigate }: HeroSectionProps) => {
       </div>
 
       {/* Content */}
-      <div className="relative z-10 container mx-auto px-4 text-center">
+      <div className="relative z-10 container mx-auto px-4 text-center py-8">
         {/* Logo Principal */}
         <div className="mb-8 animate-float">
           <img 
@@ -39,13 +39,13 @@ export const HeroSection = ({ onNavigate }: HeroSectionProps) => {
         </h1>
 
         {/* Subtitle */}
-        <p className="text-xl md:text-2xl text-instituto-text-light/90 mb-12 max-w-3xl mx-auto leading-relaxed">
+        <p className="text-lg md:text-xl lg:text-2xl text-instituto-text-light/90 mb-8 lg:mb-12 max-w-3xl mx-auto leading-relaxed">
           Há mais de uma década levando esperança, educação e desenvolvimento 
           para comunidades em situação de vulnerabilidade social
         </p>
 
         {/* CTA Buttons */}
-        <div className="flex flex-col sm:flex-row gap-4 justify-center items-center mb-12">
+        <div className="flex flex-col sm:flex-row gap-4 justify-center items-center mb-8 lg:mb-12">
           <Button 
             variant="hero" 
             size="xl"
@@ -67,34 +67,34 @@ export const HeroSection = ({ onNavigate }: HeroSectionProps) => {
       </div>
 
       {/* Stats Section */}
-      <div className="absolute bottom-20 left-1/2 transform -translate-x-1/2 w-full max-w-6xl px-4">
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-6 lg:gap-8">
-          <div className="bg-instituto-white/10 backdrop-blur-sm rounded-2xl p-4 lg:p-6 border border-instituto-white/20 text-center">
+      <div className="absolute bottom-24 left-1/2 transform -translate-x-1/2 w-full max-w-6xl px-4">
+        <div className="grid grid-cols-1 md:grid-cols-3 gap-4 lg:gap-6">
+          <div className="bg-instituto-white/10 backdrop-blur-sm rounded-xl p-4 border border-instituto-white/20 text-center">
             <div className="flex items-center justify-center mb-2">
-              <Heart className="text-instituto-accent mr-2" size={28} />
-              <span className="text-3xl lg:text-4xl font-bold text-instituto-text-light">3+</span>
+              <Heart className="text-instituto-accent mr-2" size={24} />
+              <span className="text-2xl lg:text-3xl font-bold text-instituto-text-light">3+</span>
             </div>
-            <p className="text-instituto-text-light/80 font-medium text-sm lg:text-base">Anos de Atuação</p>
+            <p className="text-instituto-text-light/80 font-medium text-sm">Anos de Atuação</p>
           </div>
-          <div className="bg-instituto-white/10 backdrop-blur-sm rounded-2xl p-4 lg:p-6 border border-instituto-white/20 text-center">
+          <div className="bg-instituto-white/10 backdrop-blur-sm rounded-xl p-4 border border-instituto-white/20 text-center">
             <div className="flex items-center justify-center mb-2">
-              <Users className="text-instituto-accent mr-2" size={28} />
-              <span className="text-3xl lg:text-4xl font-bold text-instituto-text-light">500+</span>
+              <Users className="text-instituto-accent mr-2" size={24} />
+              <span className="text-2xl lg:text-3xl font-bold text-instituto-text-light">500+</span>
             </div>
-            <p className="text-instituto-text-light/80 font-medium text-sm lg:text-base">Pessoas Impactadas</p>
+            <p className="text-instituto-text-light/80 font-medium text-sm">Pessoas Impactadas</p>
           </div>
-          <div className="bg-instituto-white/10 backdrop-blur-sm rounded-2xl p-4 lg:p-6 border border-instituto-white/20 text-center">
+          <div className="bg-instituto-white/10 backdrop-blur-sm rounded-xl p-4 border border-instituto-white/20 text-center">
             <div className="flex items-center justify-center mb-2">
-              <Star className="text-instituto-accent mr-2" size={28} />
-              <span className="text-3xl lg:text-4xl font-bold text-instituto-text-light">15+</span>
+              <Star className="text-instituto-accent mr-2" size={24} />
+              <span className="text-2xl lg:text-3xl font-bold text-instituto-text-light">15+</span>
             </div>
-            <p className="text-instituto-text-light/80 font-medium text-sm lg:text-base">Projetos Realizados</p>
+            <p className="text-instituto-text-light/80 font-medium text-sm">Projetos Realizados</p>
           </div>
         </div>
       </div>
 
       {/* Scroll Indicator */}
-      <div className="absolute bottom-4 left-1/2 transform -translate-x-1/2 animate-bounce">
+      <div className="absolute bottom-6 left-1/2 transform -translate-x-1/2 animate-bounce">
         <div className="w-1 h-6 bg-instituto-accent rounded-full opacity-70"></div>
       </div>
     </section>
