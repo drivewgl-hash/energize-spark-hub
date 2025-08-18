@@ -26,10 +26,10 @@ const mvvData = [
 
 export const AboutSection = () => {
   return (
-    <section className="py-20 bg-instituto-background">
+    <section className="py-16 lg:py-20 bg-instituto-background">
       <div className="container mx-auto px-4">
         {/* About Content */}
-        <div className="mb-20">
+        <div className="mb-16 lg:mb-20">
           <div className="flex flex-col lg:flex-row items-center gap-12 lg:gap-20">
             {/* Image */}
             <div className="lg:w-1/2">
@@ -70,7 +70,7 @@ export const AboutSection = () => {
         </div>
 
         {/* Mission, Vision, Values */}
-        <div className="mb-20">
+        <div className="mb-16 lg:mb-20">
           <div className="text-center mb-16">
             <h2 className="text-4xl lg:text-5xl font-bold text-instituto-primary mb-6">
               Nossos Pilares
@@ -108,7 +108,7 @@ export const AboutSection = () => {
         </div>
 
         {/* Linha do Tempo Histórica */}
-        <div className="pt-20">
+        <div className="pt-16 lg:pt-20">
           <div className="text-center mb-16">
             <h2 className="text-4xl lg:text-5xl font-bold text-instituto-primary mb-6">
               Saiba mais sobre nossa atuação através da Linha do Tempo

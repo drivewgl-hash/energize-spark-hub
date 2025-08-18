@@ -74,7 +74,7 @@ const Index = () => {
       />
 
       {/* Main Content */}
-      <main className="relative z-10 pt-20 lg:pt-24">
+      <main className="relative z-10">
         {renderSection()}
       </main>
 

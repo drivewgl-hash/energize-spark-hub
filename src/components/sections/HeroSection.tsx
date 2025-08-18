@@ -66,36 +66,36 @@ export const HeroSection = ({ onNavigate }: HeroSectionProps) => {
         </div>
       </div>
 
-      {/* Stats Section - Separada e mais afastada */}
-      <div className="absolute bottom-16 left-1/2 transform -translate-x-1/2 w-full max-w-6xl px-4">
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
-          <div className="bg-instituto-white/10 backdrop-blur-sm rounded-2xl p-6 border border-instituto-white/20 text-center">
-            <div className="flex items-center justify-center mb-3">
-              <Heart className="text-instituto-accent mr-2" size={32} />
-              <span className="text-4xl font-bold text-instituto-text-light">3+</span>
+      {/* Stats Section */}
+      <div className="absolute bottom-20 left-1/2 transform -translate-x-1/2 w-full max-w-6xl px-4">
+        <div className="grid grid-cols-1 md:grid-cols-3 gap-6 lg:gap-8">
+          <div className="bg-instituto-white/10 backdrop-blur-sm rounded-2xl p-4 lg:p-6 border border-instituto-white/20 text-center">
+            <div className="flex items-center justify-center mb-2">
+              <Heart className="text-instituto-accent mr-2" size={28} />
+              <span className="text-3xl lg:text-4xl font-bold text-instituto-text-light">3+</span>
             </div>
-            <p className="text-instituto-text-light/80 font-medium">Anos de Atuação</p>
+            <p className="text-instituto-text-light/80 font-medium text-sm lg:text-base">Anos de Atuação</p>
           </div>
-          <div className="bg-instituto-white/10 backdrop-blur-sm rounded-2xl p-6 border border-instituto-white/20 text-center">
-            <div className="flex items-center justify-center mb-3">
-              <Users className="text-instituto-accent mr-2" size={32} />
-              <span className="text-4xl font-bold text-instituto-text-light">500+</span>
+          <div className="bg-instituto-white/10 backdrop-blur-sm rounded-2xl p-4 lg:p-6 border border-instituto-white/20 text-center">
+            <div className="flex items-center justify-center mb-2">
+              <Users className="text-instituto-accent mr-2" size={28} />
+              <span className="text-3xl lg:text-4xl font-bold text-instituto-text-light">500+</span>
             </div>
-            <p className="text-instituto-text-light/80 font-medium">Pessoas Impactadas</p>
+            <p className="text-instituto-text-light/80 font-medium text-sm lg:text-base">Pessoas Impactadas</p>
           </div>
-          <div className="bg-instituto-white/10 backdrop-blur-sm rounded-2xl p-6 border border-instituto-white/20 text-center">
-            <div className="flex items-center justify-center mb-3">
-              <Star className="text-instituto-accent mr-2" size={32} />
-              <span className="text-4xl font-bold text-instituto-text-light">15+</span>
+          <div className="bg-instituto-white/10 backdrop-blur-sm rounded-2xl p-4 lg:p-6 border border-instituto-white/20 text-center">
+            <div className="flex items-center justify-center mb-2">
+              <Star className="text-instituto-accent mr-2" size={28} />
+              <span className="text-3xl lg:text-4xl font-bold text-instituto-text-light">15+</span>
             </div>
-            <p className="text-instituto-text-light/80 font-medium">Projetos Realizados</p>
+            <p className="text-instituto-text-light/80 font-medium text-sm lg:text-base">Projetos Realizados</p>
           </div>
         </div>
       </div>
 
       {/* Scroll Indicator */}
-      <div className="absolute bottom-8 left-1/2 transform -translate-x-1/2 animate-bounce">
-        <div className="w-1 h-8 bg-instituto-accent rounded-full opacity-70"></div>
+      <div className="absolute bottom-4 left-1/2 transform -translate-x-1/2 animate-bounce">
+        <div className="w-1 h-6 bg-instituto-accent rounded-full opacity-70"></div>
       </div>
     </section>
   );
