@@ -1,0 +1,342 @@
+/* Instituto Energizando Vidas Design System */
+
+/* Base styles */
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+}
+
+/* Interactive Elements */
+.interactive-underline {
+    position: relative;
+}
+
+.interactive-underline::after {
+    content: '';
+    position: absolute;
+    width: 100%;
+    transform: scaleX(0);
+    height: 2px;
+    bottom: 0;
+    left: 0;
+    background-color: hsl(85, 95%, 56%);
+    transform-origin: bottom right;
+    transition: transform 0.3s ease;
+}
+
+.interactive-underline:hover::after {
+    transform: scaleX(1);
+    transform-origin: bottom left;
+}
+
+/* Cards */
+.card-elevated {
+    box-shadow: 0 20px 40px rgba(0, 0, 0, 0.1);
+    transition: all 0.3s ease;
+}
+
+.card-elevated:hover {
+    transform: translateY(-8px);
+}
+
+.card-glow {
+    box-shadow: 0 0 40px hsl(85deg 95% 56% / 0.3);
+}
+
+/* Animations */
+.animate-float {
+    animation: float 6s ease-in-out infinite;
+}
+
+.animate-pulse-slow {
+    animation: pulse 3s cubic-bezier(0.4, 0, 0.6, 1) infinite;
+}
+
+.animate-fade-in-up {
+    animation: fadeInUp 0.8s ease-out forwards;
+}
+
+/* Button Styles */
+.btn-hero {
+    background: linear-gradient(135deg, hsl(85, 95%, 56%), hsl(85, 85%, 66%));
+    color: hsl(223, 100%, 13%);
+    padding: 16px 32px;
+    border-radius: 12px;
+    font-weight: 600;
+    font-size: 18px;
+    border: none;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
+}
+
+.btn-hero:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 10px 30px rgba(154, 247, 34, 0.4);
+}
+
+.btn-cta {
+    background: hsl(85, 95%, 56%);
+    color: hsl(223, 100%, 13%);
+    padding: 12px 24px;
+    border-radius: 8px;
+    font-weight: 600;
+    border: none;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
+}
+
+.btn-cta:hover {
+    background: hsl(85, 85%, 66%);
+    transform: translateY(-2px);
+}
+
+.btn-outline {
+    background: transparent;
+    color: hsl(210, 17%, 95%);
+    border: 2px solid hsl(210, 17%, 95%);
+    padding: 12px 24px;
+    border-radius: 8px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
+}
+
+.btn-outline:hover {
+    background: hsl(210, 17%, 95%);
+    color: hsl(223, 100%, 13%);
+    transform: translateY(-2px);
+}
+
+.btn-accent {
+    background: hsl(85, 95%, 56%);
+    color: hsl(223, 100%, 13%);
+    padding: 16px 32px;
+    border-radius: 12px;
+    font-weight: 600;
+    font-size: 18px;
+    border: none;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
+}
+
+.btn-accent:hover {
+    background: hsl(85, 85%, 66%);
+    transform: translateY(-2px);
+}
+
+/* Form Styles */
+.form-input {
+    width: 100%;
+    padding: 12px 16px;
+    border: 2px solid hsl(210, 17%, 92%);
+    border-radius: 8px;
+    font-size: 16px;
+    transition: border-color 0.3s ease;
+    background: white;
+}
+
+.form-input:focus {
+    outline: none;
+    border-color: hsl(85, 95%, 56%);
+}
+
+.form-textarea {
+    width: 100%;
+    padding: 12px 16px;
+    border: 2px solid hsl(210, 17%, 92%);
+    border-radius: 8px;
+    font-size: 16px;
+    resize: none;
+    transition: border-color 0.3s ease;
+    background: white;
+    font-family: 'Poppins', sans-serif;
+}
+
+.form-textarea:focus {
+    outline: none;
+    border-color: hsl(85, 95%, 56%);
+}
+
+.form-select {
+    width: 100%;
+    padding: 12px 16px;
+    border: 2px solid hsl(210, 17%, 92%);
+    border-radius: 8px;
+    font-size: 16px;
+    background: white;
+    cursor: pointer;
+    transition: border-color 0.3s ease;
+}
+
+.form-select:focus {
+    outline: none;
+    border-color: hsl(85, 95%, 56%);
+}
+
+/* Custom Checkbox */
+.form-checkbox {
+    width: 20px;
+    height: 20px;
+    accent-color: hsl(85, 95%, 56%);
+}
+
+/* Keyframes */
+@keyframes float {
+    0%, 100% {
+        transform: translateY(0px);
+    }
+    50% {
+        transform: translateY(-20px);
+    }
+}
+
+@keyframes fadeInUp {
+    0% {
+        opacity: 0;
+        transform: translateY(30px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes pulse {
+    0%, 100% {
+        opacity: 1;
+    }
+    50% {
+        opacity: 0.7;
+    }
+}
+
+/* Navigation Styles */
+.nav-scrolled {
+    background: rgba(0, 11, 67, 0.9);
+    backdrop-filter: blur(16px);
+    box-shadow: 0 15px 35px rgba(0, 0, 0, 0.08);
+}
+
+.nav-hidden {
+    transform: translateY(-100%);
+}
+
+.nav-link.active {
+    color: hsl(85, 95%, 56%) !important;
+}
+
+.mobile-nav-link.active {
+    color: hsl(85, 95%, 56%) !important;
+    background-color: hsl(210, 17%, 95%) !important;
+}
+
+/* Utility Classes */
+.text-gradient {
+    background: linear-gradient(135deg, hsl(85, 95%, 56%), hsl(85, 85%, 66%));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+}
+
+.bg-gradient-hero {
+    background: linear-gradient(45deg, hsl(223, 100%, 13%), hsl(212, 97%, 40%));
+}
+
+.bg-gradient-primary {
+    background: linear-gradient(135deg, hsl(223, 100%, 13%), hsl(212, 97%, 40%));
+}
+
+.bg-gradient-accent {
+    background: linear-gradient(135deg, hsl(85, 95%, 56%), hsl(85, 85%, 66%));
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .container {
+        padding-left: 16px;
+        padding-right: 16px;
+    }
+    
+    .btn-hero,
+    .btn-accent {
+        font-size: 16px;
+        padding: 14px 28px;
+    }
+}
+
+/* Particle Background */
+.particle-bg {
+    background: hsl(223, 100%, 13%);
+    position: relative;
+    overflow: hidden;
+}
+
+/* Tabs Styles */
+.tab-trigger {
+    padding: 12px 24px;
+    border-radius: 8px;
+    border: none;
+    background: transparent;
+    color: hsl(223, 100%, 13%);
+    font-weight: 600;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.tab-trigger.active {
+    background: hsl(85, 95%, 56%);
+    color: hsl(223, 100%, 13%);
+}
+
+.tab-content {
+    display: none;
+}
+
+.tab-content.active {
+    display: block;
+}
+
+/* Loading Animation */
+.loading {
+    display: inline-block;
+    width: 20px;
+    height: 20px;
+    border: 3px solid rgba(154, 247, 34, 0.3);
+    border-radius: 50%;
+    border-top-color: hsl(85, 95%, 56%);
+    animation: spin 1s ease-in-out infinite;
+}
+
+@keyframes spin {
+    to {
+        transform: rotate(360deg);
+    }
+}
+
+/* Smooth Transitions */
+.transition-smooth {
+    transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.transition-bounce {
+    transition: all 0.3s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+}
