@@ -230,10 +230,16 @@ body {
 }
 
 /* Navigation Styles */
+#navigation {
+    background: rgba(0, 11, 67, 0.7);
+    backdrop-filter: blur(8px);
+    transition: all 0.3s ease;
+}
+
 .nav-scrolled {
-    background: rgba(0, 11, 67, 0.9);
+    background: rgba(0, 11, 67, 0.95);
     backdrop-filter: blur(16px);
-    box-shadow: 0 15px 35px rgba(0, 0, 0, 0.08);
+    box-shadow: 0 15px 35px rgba(0, 0, 0, 0.1);
 }
 
 .nav-hidden {
